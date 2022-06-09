@@ -5,7 +5,7 @@ const api = express.Router();
 // get ALL data
 api.get("/:collection", async (req, res) => {
   const response = await getAllData(req.params.collection);
-  res.json(response);
+  res.send(response);
 });
 
 // get one document from collection
@@ -14,14 +14,14 @@ api.get("/:collection/:id", async (req, res) => {
   /* Destructuring the req.params object. */
   const { collection, id } = req.params;
   const response = await getOneData(collection, id);
-  res.json(response);
+  res.send(response);
 });
 
 
 api.post("/:collection",isUser , async (req, res) => {
   const { collection } = req.params;
   setData(collection,req.body )
-  res.json(req.body);
+  res.send(req.body);
 });
 
 //update document 
@@ -29,7 +29,7 @@ api.post("/:collection",isUser , async (req, res) => {
 api.put("/:collection/:id",isUser, async (req, res) => {
   const { collection, id } = req.params;
   updateData(collection,id,req.body   )
-  res.json(req.body);
+  res.send(req.body);
 });
 
 

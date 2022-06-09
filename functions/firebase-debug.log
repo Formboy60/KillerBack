@@ -1,0 +1,75 @@
+[debug] [2022-06-09T14:06:52.436Z] ----------------------------------------------------------------------
+[debug] [2022-06-09T14:06:52.438Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nicolas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-09T14:06:52.438Z] CLI Version:   11.0.1
+[debug] [2022-06-09T14:06:52.438Z] Platform:      win32
+[debug] [2022-06-09T14:06:52.438Z] Node Version:  v16.14.1
+[debug] [2022-06-09T14:06:52.439Z] Time:          Thu Jun 09 2022 16:06:52 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2022-06-09T14:06:52.440Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-09T14:06:52.509Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-09T14:06:52.510Z] > authorizing via signed-in user (formboy@gmail.com)
+[debug] [2022-06-09T14:06:52.640Z] java version "11.0.14" 2022-01-18 LTS
+
+[debug] [2022-06-09T14:06:52.641Z] Java(TM) SE Runtime Environment 18.9 (build 11.0.14+8-LTS-263)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.14+8-LTS-263, mixed mode)
+
+[debug] [2022-06-09T14:06:52.667Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: functions, firestore, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, storage"}}
+[debug] [2022-06-09T14:06:52.695Z] [hub] writing locator at C:\Users\nicolas\AppData\Local\Temp\hub-bilan-14be5.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, database, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, database, hosting, pubsub\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-09T14:06:52.731Z] defaultcredentials: writing to file C:\Users\nicolas\AppData\Roaming\firebase\formboy_gmail_com_application_default_credentials.json
+[debug] [2022-06-09T14:06:52.733Z] Setting GAC to C:\Users\nicolas\AppData\Roaming\firebase\formboy_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\nicolas\\AppData\\Roaming\\firebase\\formboy_gmail_com_application_default_credentials.json"}}
+[debug] [2022-06-09T14:06:52.736Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bilan-14be5/adminSdkConfig [none]
+[debug] [2022-06-09T14:06:53.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bilan-14be5/adminSdkConfig 200
+[debug] [2022-06-09T14:06:53.033Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bilan-14be5/adminSdkConfig {"projectId":"bilan-14be5","storageBucket":"bilan-14be5.appspot.com","locationId":"europe-west"}
+[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2022-06-09T14:06:53.045Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-06-09T14:06:53.046Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-09T14:06:53.046Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\nicolas\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\nicolas\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-06-09T14:06:54.348Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-09T14:06:55.168Z] Temp file directory for storage emulator: C:\Users\nicolas\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\nicolas\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-06-09T14:06:55.199Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-09T14:06:55.200Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-09T14:06:55.200Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\nicolas\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\nicolas\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-09T14:06:55.332Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "C:\Users\nicolas\Desktop\dev web\killer\KillerBack\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\nicolas\\Desktop\\dev web\\killer\\KillerBack\\functions\" for Cloud Functions..."}}
+[debug] [2022-06-09T14:06:55.483Z] Validating nodejs source
+[debug] [2022-06-09T14:06:58.186Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "apexcharts": "^3.35.0",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-09T14:06:58.186Z] Building nodejs source
+[debug] [2022-06-09T14:06:58.186Z] Analyzing nodejs backend spec
+[debug] [2022-06-09T14:06:58.188Z] Could not find functions.yaml. Must use http discovery
